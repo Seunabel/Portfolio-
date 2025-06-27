@@ -1,0 +1,67 @@
+// Portfolio Website for Oluwaseun Blessing Oladeji (Mobile-Optimized) // Built with React + TailwindCSS + GitHub Pages deployable
+
+import React from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { Mail, Github, Linkedin } from "lucide-react";
+
+export default function Portfolio() { return ( <div className="min-h-screen bg-white px-4 py-8 font-sans text-gray-900 max-w-3xl mx-auto"> <header className="mb-8"> <h1 className="text-3xl font-bold mb-1">Oluwaseun Blessing Oladeji</h1> <p className="text-sm">Aspiring Data Analyst | Excel • SQL • Power BI • Python</p> <div className="flex gap-4 mt-2"> <a href="mailto:royaldamaug@gmail.com"><Mail size={20} /></a> <a href="https://github.com/Seunabel" target="_blank"><Github size={20} /></a> <a href="https://linkedin.com/in/yourprofile" target="_blank"><Linkedin size={20} /></a> </div> </header>
+
+<section className="mb-10">
+    <h2 className="text-xl font-semibold mb-2">About Me</h2>
+    <p>
+      I’m Oluwaseun Blessing Oladeji — a passionate and detail-driven data analyst with a love for turning raw data into actionable insights. With growing expertise in Excel, SQL, Power BI, and Python, I enjoy solving real-world problems by finding patterns, trends, and meaning hidden in numbers.
+      <br /><br />
+      My mission is to help businesses make smarter, data-informed decisions — whether it's through clean dashboards, smart queries, or deep analysis. I’m always learning, building, and exploring new ways to make data beautiful and useful.
+    </p>
+  </section>
+
+  <section className="mb-10">
+    <h2 className="text-xl font-semibold mb-2">Projects</h2>
+    <div className="grid gap-4">
+      <Card>
+        <CardContent className="p-4">
+          <h3 className="font-bold">🏪 Sales Dashboard (Power BI)</h3>
+          <p className="text-sm mt-1">
+            Built an interactive dashboard to track sales, profit, and performance using sample retail data.
+          </p>
+          <a href="https://github.com/Seunabel/sales-dashboard" target="_blank" className="text-blue-600 text-sm mt-1 inline-block">View on GitHub</a>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-4">
+          <h3 className="font-bold">🎬 Movie Ratings Analysis (Python & Pandas)</h3>
+          <p className="text-sm mt-1">
+            Analyzed IMDb movie data using Python to find patterns in ratings, genres, and revenue.
+          </p>
+          <a href="https://github.com/Seunabel/movie-analysis" target="_blank" className="text-blue-600 text-sm mt-1 inline-block">View on GitHub</a>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-4">
+          <h3 className="font-bold">🧾 Customer Orders (SQL Report)</h3>
+          <p className="text-sm mt-1">
+            Wrote complex SQL queries to analyze customer orders, frequency, and revenue trends.
+          </p>
+          <a href="https://github.com/Seunabel/sql-customer-orders" target="_blank" className="text-blue-600 text-sm mt-1 inline-block">View on GitHub</a>
+        </CardContent>
+      </Card>
+    </div>
+  </section>
+
+  <section className="mb-10">
+    <h2 className="text-xl font-semibold mb-2">Skills</h2>
+    <ul className="list-disc list-inside text-sm">
+      <li>Excel: Formulas, PivotTables, Charts</li>
+      <li>SQL: Joins, Aggregates, Subqueries</li>
+      <li>Power BI: DAX, Dashboards, Power Query</li>
+      <li>Python: Pandas, Matplotlib, Data Cleaning</li>
+    </ul>
+  </section>
+
+  <footer className="text-center text-sm text-gray-500 mt-8">
+    © 2025 Oluwaseun Blessing Oladeji. Built with 💻 by ChatGPT.
+  </footer>
+</div>
+
+); }
+
